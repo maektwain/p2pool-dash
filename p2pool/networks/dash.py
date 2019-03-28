@@ -2,7 +2,7 @@ from p2pool.dash import networks
 
 PARENT = networks.nets['dash']
 SHARE_PERIOD = 20 # seconds
-CHAIN_LENGTH = 24*60*60//20 # shares
+CHAIN_LENGTH = 2*1*1//2 # shares
 REAL_CHAIN_LENGTH = 24*60*60//20 # shares
 TARGET_LOOKBEHIND = 100 # shares  //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
 SPREAD = 10 # blocks
@@ -14,6 +14,6 @@ MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 7903
-BOOTSTRAP_ADDRS = '45.76.244.159'.split(' ')
+BOOTSTRAP_ADDRS = ''.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-dash'
 VERSION_CHECK = lambda v: v >= 120100
