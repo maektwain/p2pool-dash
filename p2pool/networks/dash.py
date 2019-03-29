@@ -2,9 +2,9 @@ from p2pool.dash import networks
 
 PARENT = networks.nets['dash']
 SHARE_PERIOD = 20 # seconds
-CHAIN_LENGTH = 2*1*1//2  # shares
-REAL_CHAIN_LENGTH = 2*1*1//2 # shares
-TARGET_LOOKBEHIND = 10 # shares  //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
+CHAIN_LENGTH = 24*60*60//20  # shares
+REAL_CHAIN_LENGTH = 24*60*60//20 # shares
+TARGET_LOOKBEHIND = 50 # shares  //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
 SPREAD = 5 # blocks
 IDENTIFIER = '7242ef345e1bed6b'.decode('hex')
 PREFIX = '3b3e1286f446b891'.decode('hex')
